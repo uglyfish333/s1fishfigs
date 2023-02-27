@@ -1,0 +1,21 @@
+Set proper Gcode flavor. In Superslicer choose Klipper, in Prusaslicer choose Smoothie, in Cura..I'm not sure
+
+----------
+
+- Enter the following as your start g code in your slicer (in Superslicer: Printer Settings > Custom G-code)
+
+M117
+START_PRINT BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]
+
+- Enter the following as your end g code in your slicer (in Superslicer: Printer Settings > Custom G-code)
+
+END_PRINT
+
+- (optional) Enter the following as your filament specific start g code in your slicer (in Superslicer: Filament Settings > Custom G-code)
+
+SET_PRESSURE_ADVANCE ADVANCE=0.09 (after runnings tests to determine proper amount)
+SET_GCODE_OFFSET Z_ADJUST=.02 (if desired to print a specific filament at a different height - e.g. I print PETG a bit high)
+
+----------
+
+Turn on object labelling in order for KAMP to work (in Superslicer: Print Settings > Output options < Label objects)

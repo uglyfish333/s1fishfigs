@@ -1,0 +1,5 @@
+So the basic config found in the github for the Ender 3 S1 leaves a bit to be desired, and I've been piecing together my configuration as I've gone along, and it's at a place now where I feel like someone else might get a benefit from it.
+
+To be clear, this config is for my specific set up, and may not work as is for everyone. I've added some comments, but you really should read through the configs and try to understand what everything does before just using it. At the time of writing this, my specific machine is an Ender 3 S1 base model, upgraded with an all metal hotend and bed insulation (essentially making it a pro, and configured as such), as well as Y axis linear rails, and a printed hotend mount that moves the CR-Touch and replaces the hotend and parts fan with a 4020 and 5015 blower fan respectively (with configs to match). I also replaced bed springs and the Y rollers, but those won't impact the configs like the other things.
+
+It's set up to use custom start and end codes, with adaptive meshing and purging before each print. It's got the files included for a Trianglelabs USBADXL345 accelerometer
